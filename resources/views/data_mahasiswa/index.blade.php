@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'Daftar Data Mahasiswa')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Data Mahasiswa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body class="bg-light">
-
+@section('content')
     <div class="container mt-5">
         <div class="card p-4 shadow-sm">
             <h2 class="text-center mb-4">Daftar Data Mahasiswa</h2>
@@ -52,7 +43,4 @@
             @endif
         </div>
     </div>
-
-</body>
-
-</html>
+@endsection

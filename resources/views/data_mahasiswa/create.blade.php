@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('title', 'Input Data Mahasiswa')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Data Mahasiswa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body class="bg-light">
-
+@section('content')
     <div class="container mt-5">
         <div class="card p-4 shadow-sm mx-auto" style="max-width: 600px;">
             <h2 class="text-center mb-4">Input Data Mahasiswa</h2>
@@ -42,8 +33,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="no_ktp" class="form-label">No. KTP</label>
-                    <input type="text" class="form-control" id="no_ktp" name="no_ktp"
-                        value="{{ old('no_ktp') }}">
+                    <input type="text" class="form-control" id="no_ktp" name="no_ktp" value="{{ old('no_ktp') }}">
                 </div>
                 <div class="mb-3">
                     <label for="alamat_rumah" class="form-label">Alamat Rumah</label>
@@ -56,8 +46,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="nomor_hp" class="form-label">Nomor HP</label>
-                    <input type="text" class="form-control" id="nomor_hp" name="nomor_hp"
-                        value="{{ old('nomor_hp') }}">
+                    <input type="text" class="form-control" id="nomor_hp" name="nomor_hp" value="{{ old('nomor_hp') }}">
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary">Simpan</button>
@@ -66,7 +55,4 @@
             </form>
         </div>
     </div>
-
-</body>
-
-</html>
+@endsection
