@@ -18,6 +18,7 @@
             <hr>
             <div class="d-grid gap-2">
                 <a href="{{ route('data-mahasiswa.create') }}" class="btn btn-primary">Input Data Mahasiswa</a>
+                <a href="{{ route('data-mahasiswa.index') }}" class="btn btn-info">Lihat Data Mahasiswa</a>
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-danger w-100 mt-2">Logout</button>

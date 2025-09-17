@@ -8,6 +8,16 @@ use App\Models\DataMahasiswa;
 class DataMahasiswaController extends Controller
 {
     /**
+     * Menampilkan daftar semua data mahasiswa.
+     */
+    public function index()
+    {
+        $mahasiswas = DataMahasiswa::all(); // Mengambil semua data dari tabel
+
+        return view('data_mahasiswa.index', compact('mahasiswas'));
+    }
+
+    /**
      * Menampilkan form input data mahasiswa.
      */
     public function create()

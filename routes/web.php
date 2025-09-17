@@ -28,6 +28,7 @@ Route::middleware('auth')->group(function () {
     })->name('dashboard');
 
     // Route untuk halaman input data mahasiswa (hanya bisa diakses jika sudah login)
+    Route::get('/data-mahasiswa', [DataMahasiswaController::class, 'index'])->name('data-mahasiswa.index');
     Route::get('/data-mahasiswa/create', [DataMahasiswaController::class, 'create'])->name('data-mahasiswa.create');
     Route::post('/data-mahasiswa', [DataMahasiswaController::class, 'store'])->name('data-mahasiswa.store');
 });
